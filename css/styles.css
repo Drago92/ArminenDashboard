@@ -1,0 +1,254 @@
+.dark-mode .dt-button-collection{
+  background-color: #343a40 !important;
+}
+:root {
+  --code-color: darkred;
+  --code-bg-color: #aaa;
+  --code-font-size: 14px;
+  --code-line-height: 1.4;
+  --scroll-bar-color: #c5c5c5;
+  --scroll-bar-bg-color: #f6f6f6;
+}
+
+pre {
+  color: var(--code-color);
+  font-size: var(--code-font-size);
+  line-height: var(--code-line-height);
+  background-color: var(--code-bg-color);
+}
+
+.code-block {
+  max-height: 100px;
+  overflow: auto;
+  padding: 8px 7px 5px 15px;
+  margin: 0;
+  border-radius: 7px;
+}
+
+::-webkit-scrollbar-corner { background: rgba(0, 0, 0, .5); }
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scroll-bar-color) var(--scroll-bar-bg-color);
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--scroll-bar-bg-color);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-bar-color);
+  border-radius: 20px;
+  border: 3px solid var(--scroll-bar-bg-color);
+}
+.wappenBackground{
+  background-image: url("../assets/img/wappen.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 15%;
+}
+.myLogo{
+  background-color: #367fa9 !important;
+  transition: width .3s ease-in-out;
+  width: 230px;
+  float: left;
+  color: #fff;
+  font-size: 20px;
+  font-weight: normal !important;
+  padding: 7px 5px !important;
+}
+
+.overlay {
+  z-index: 10;
+  display: none;
+  position: absolute;
+  left: 40%;
+  top: 20%;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 450px;
+  font-weight: bold;
+}
+
+.checkmark {
+  width: 50px;
+}
+
+.path {
+  stroke-dasharray: 300;
+  stroke-dashoffset: 0;
+  animation-name: load, spin;
+  animation-duration: 3s, 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-name: load, spin;
+  animation-duration: 3s, 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+  transform-origin: 50px 50px;
+}
+
+.path-complete {
+  animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+.check
+{
+  stroke-dasharray: 110;
+  stroke-dashoffset: -110;
+  stroke-width: 0;
+}
+
+.check-complete
+{
+  animation: check 1s ease-in forwards;
+  animation: check 1s ease-in forwards;
+  stroke-width: 15;
+  stroke-dashoffset: 0;
+}
+
+.fill
+{
+  stroke-dasharray: 285;
+  stroke-dashoffset: -257;
+  animation: spin-fill 3s cubic-bezier(.7, .435, .12, .6) infinite forwards;
+  animation: spin-fill 3s cubic-bezier(.7, .465, .12, .6) infinite forwards;
+  transform-origin: 50% 50%;
+  transform-origin: 50px 50px;
+}
+
+.fill-complete
+{
+  animation: fill 1s ease-out forwards;
+  animation: fill 1s ease-out forwards;
+}
+
+@keyframes load {
+  0% {
+    stroke-dashoffset: 300;
+    animation-timing-function: cubic-bezier(.55, .055, .675, .19);
+  }
+  50% {
+    stroke-dashoffset: 0;
+    animation-timing-function: cubic-bezier(.215, .61, .355, 1);
+  }
+  100% {
+    stroke-dashoffset: -300;
+  }
+}
+@keyframes load {
+  0% {
+    stroke-dashoffset: 285;
+    animation-timing-function: cubic-bezier(.55, .055, .675, .19);
+  }
+  50% {
+    stroke-dashoffset: 0;
+    animation-timing-function: cubic-bezier(.215, .61, .355, 1);
+  }
+  100% {
+    stroke-dashoffset: -285;
+  }
+}
+
+@keyframes check {
+  0% {
+    stroke-dashoffset: -110;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes check {
+  0% {
+    stroke-dashoffset: -110;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-fill {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(720deg);
+  }
+}
+@keyframes spin-fill {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(720deg);
+  }
+}
+
+@keyframes fill {
+  0% {
+    stroke-dashoffset: 285;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes fill {
+  0% {
+    stroke-dashoffset: 285;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.success
+{
+  stroke: #090;
+  transition: stroke .6s;
+}
+#addForm {
+  z-index: 10;
+  display: none;
+  position: absolute;
+  left: 40%;
+  top: 20%;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px;
+  background-color: #343a40;
+  padding: 20px;
+  width: 450px;
+  font-weight: bold;
+}
+.invalid{
+  color: #ffd642 !important;
+}
+.valid{
+  color: #5bff42 !important;
+}
