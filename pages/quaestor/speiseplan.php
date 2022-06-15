@@ -112,17 +112,16 @@ include("../../scripts/dbInvoice.php");
         // debugger
 
       }
-      // dateClick: function(info) {
-      //   // change the day's background color just for fun
-      //   debugger
-      //   info.dayEl.contentEditable=true;
-      //   $(info.dayEl).find("div.fc-daygrid-day-frame").attr("contentEditable","true");
-      //   $(info.dayEl).find("div.fc-daygrid-day-events").attr("contentEditable","true");
-      //   $(info.dayEl).find("div.fc-daygrid-day-top").attr("contentEditable","true");
-      //   $(info.dayEl).find("div.fc-daygrid-day-bg").attr("contentEditable","true");
-      //   $(info.dayEl).find("div.fc-daygrid-day-bg").find("div").attr("contentEditable","true");
-      //   $(info.dayEl).find("div.fc-daygrid-day-events").find("div").attr("contentEditable","true");
-      // },
+      dateClick: function(info) {
+        // change the day's background color just for fun
+        info.dayEl.contentEditable=true;
+        $(info.dayEl).find("div.fc-daygrid-day-frame").attr("contentEditable","true");
+        $(info.dayEl).find("div.fc-daygrid-day-events").attr("contentEditable","true");
+        $(info.dayEl).find("div.fc-daygrid-day-top").attr("contentEditable","true");
+        $(info.dayEl).find("div.fc-daygrid-day-bg").attr("contentEditable","true");
+        $(info.dayEl).find("div.fc-daygrid-day-bg").find("div").attr("contentEditable","true");
+        $(info.dayEl).find("div.fc-daygrid-day-events").find("div").attr("contentEditable","true");
+      },
     });
 
     calendar.render();

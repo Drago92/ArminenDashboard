@@ -69,3 +69,7 @@ TODO
 test.html
 ad.js
 /.cache/
+
+# Db Config
+/scripts/dbconfig.php
+/scripts/dbInvoice.php
