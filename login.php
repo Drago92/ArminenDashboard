@@ -106,7 +106,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["login"])){
   <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body class="hold-transition login-page">
-<div class="login-box">
+<div class="login-box container">
   <div class="login-logo">
     <a href="index.php" class="row"><img src="assets/img/wappen.png" class="col-4" width="150">
       <div class="text-left col-8"><b>KStV </b>Arminia
